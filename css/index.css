@@ -258,8 +258,30 @@ section.testimonials .testimonial-item img {
   border: 0;
 }
 
-
 /* contact section styling */
+.contact-section {
+  padding-top: 4rem;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid var(--alt-color);
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-section .card hr {
+  border-color: var(--alt-color);
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+/* social bar */
 
 
 /* footer styling */
