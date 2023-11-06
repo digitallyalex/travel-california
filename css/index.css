@@ -1,4 +1,11 @@
-/* Global styles ============= */
+/* Universal styles */
+:root {
+  --main-color: #fdcc52;
+  --alt-color: #64a19d;
+  --light-color: white;
+  --dark-color: #222222;
+}
+
 html,
 body {
   width: 100%;
@@ -6,16 +13,17 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 a {
-  color: #fdcc52;
+  color: var(--main-color);
   transition: all .35s;
 }
 
-a:hover, a:focus {
-  color: #fcbd20;
+a:hover, 
+a:focus {
+  color: var(--main-color);
 }
 
 hr {
@@ -26,7 +34,7 @@ hr {
 }
 
 hr.light {
-  border-color: white;
+  border-color: var(--light-color);
 }
 
 h1,
@@ -53,3 +61,110 @@ section {
 section h2 {
   font-size: 50px;
 }
+
+/* nav bar styling */
+#mainNav {
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: var(--alt-color);
+  transition: all 0.35s;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+  color: var(--main-color);
+}
+
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+  color: var(--main-color);
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  padding: 8px 10px;
+  color: var(--dark-color);
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#mainNav .navbar-nav > li > a.active {
+  color: var(--main-color) !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a.active:hover {
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: var(--dark-color);
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+  color: var(--main-color);
+}
+
+/* hero section styling */
+header.masthead {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  color: var(--light-color);
+  background: url(../images/bg-img.png);
+}
+
+header.masthead .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+
+header.masthead .device-container {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead .device-container .screen img {
+  border-radius: 3px;
+}
+
+section.download {
+  position: relative;
+  padding: 150px 0;
+}
+
+section.download h2 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+section.download .badges .badge-link {
+  margin-bottom: 25px;
+}
+
+section.download .badges .badge-link:last-child {
+  margin-bottom: 0;
+}
+
+section.download .badges .badge-link img {
+  height: 60px;
+}
+
+/* testimonials section styling */
+
+
+/* signup form section */
+
